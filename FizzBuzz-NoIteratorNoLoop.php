@@ -16,4 +16,4 @@ $fizzbuzz = function($number)
         echo $number . PHP_EOL;
 };
 
-array_map($fizbuzz, $numbers);
+array_map($fizzbuzz, $numbers);

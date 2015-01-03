@@ -10,6 +10,7 @@
 
 $start = microtime(TRUE);
 
+// $n = 600851475143;
 $n = 13195;
 
 function sieve($n)
@@ -27,7 +28,6 @@ function sieve($n)
         $list = array_diff($list, $multiples);
 
         $prime = min($list);
-
     }
 
     return $primeNumbers;

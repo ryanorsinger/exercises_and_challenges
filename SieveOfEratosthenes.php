@@ -15,19 +15,19 @@ $n = 13195;
 
 function sieve($n)
 {
-    $prime = 2;
+    var $prime = 2;
 
-    $list = range($prime, $n);
+    var $list = range($prime, $n);
 
     while(($prime * 2) < $n)
     {
-        $primeNumbers[] = $prime;
+        var $primeNumbers[] = $prime;
 
-        $multiples = range($prime, $n, $prime);
+        var $multiples = range($prime, $n, $prime);
 
-        $list = array_diff($list, $multiples);
+        var $list = array_diff($list, $multiples);
 
-        $prime = min($list);
+        var $prime = min($list);
     }
 
     return $primeNumbers;

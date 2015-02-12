@@ -15,11 +15,9 @@
 // If there is no such number, stop.
 // Otherwise, let p now equal this new number.
 
-$n = 13195;
+var $n = 13195;
 
 $primeNumbers = sieve($n);
-
-var_dump($primeNumbers);
 
 function sieve($n)
 {

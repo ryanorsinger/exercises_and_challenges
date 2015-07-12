@@ -9,7 +9,7 @@ HelloWorld.prototype.hello = function (input) {
 
     var message = '';
 
-    if (input === '') {
+    if (input.trim() === '') {
         message = 'Hello, world!';
     } else if (Object.prototype.toString.call(input) === '[object String]') {
         message = 'Hello, ' + input + '!';
